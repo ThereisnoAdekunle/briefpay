@@ -1,0 +1,29 @@
+:root {
+  --ink: #1c1915;
+  --paper: #f4efe6;
+  --line: #d9d0c3;
+  --accent: #9a3b1a;
+  --good: #1f6b45;
+  --muted: #6f675e;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--paper); color: var(--ink); }
+body { font-family: "Iowan Old Style", Palatino, Georgia, serif; }
+a { color: var(--accent); }
+main { max-width: 980px; margin: 0 auto; padding: 32px 20px 80px; }
+header { display: flex; justify-content: space-between; gap: 16px; align-items: end; border-bottom: 1px solid var(--ink); padding-bottom: 16px; }
+h1 { font-size: 42px; line-height: 0.95; margin: 0; letter-spacing: -0.04em; }
+.kicker { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+button, input, textarea { font: inherit; }
+button { background: var(--ink); color: var(--paper); border: 0; padding: 10px 14px; cursor: pointer; }
+button.secondary { background: transparent; color: var(--ink); border: 1px solid var(--ink); }
+input, textarea { width: 100%; border: 1px solid var(--line); background: white; padding: 10px; }
+.grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 28px; margin-top: 28px; }
+.card { border: 1px solid var(--ink); padding: 18px; background: #fbf8f3; }
+label { display: block; margin: 12px 0 6px; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 13px; }
+.row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.muted { color: var(--muted); }
+.error { color: var(--accent); }
+.ok { color: var(--good); }
+ol { padding-left: 18px; }
+@media (max-width: 800px) { .grid { grid-template-columns: 1fr; } h1 { font-size: 34px; } }

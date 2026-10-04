@@ -1,0 +1,23 @@
+{
+  "name": "briefpay",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Milestone USDC escrow for freelance briefs on Arc. Built for the Arc Microgrants mainnet challenge.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --test test/*.test.mjs",
+    "compile": "node scripts/compile.mjs"
+  },
+  "dependencies": {
+    "ethers": "^6.13.5",
+    "next": "^14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "solc": "0.8.26"
+  }
+}
